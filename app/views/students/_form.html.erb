@@ -1,12 +1,16 @@
-<%= form_tag posts_path do %>
-  <label>Post name:</label><br>
-  <%= text_field_tag :name %><br>
-
-  <label>Post Hometown</label><br>
-  <%= text_area_tag :hometown %><br>
-
-   <label>Post Birthday</label><br>
-   <%= text_area_tag :birthday %><br>
-
-  <%= submit_tag "Submit Post" %>
-<% end %>
+<%= form_for @student do |f|%>
+<p>
+  <%= f.label :name %>
+  <%= f.text_field :name %>
+</p>
+<p>
+  <%= f.label :hometown %>
+  <%= f.text_field :hometown %>
+</p>
+<p>
+  <%= f.label :birthday %>
+  <%= f.date_field :birthday %>
+</p>
+  <%= f.submit %>
+<% end %> -->
+<!-- 
