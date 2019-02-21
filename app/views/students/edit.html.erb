@@ -1,4 +1,26 @@
-<%= form_for @student do |f|%>
+<%= form_for @student do
+  <%= render partial: 'form' %>
+<% end %>
+
+<!-- <h3>Student Form</h3>
+
+<%= form_tag student_path(@student), method: "put" do %>
+  <label>Student name:</label><br>
+  <%= text_field_tag :name, @student.name %><br>
+
+  <label>Student Hometown</label><br>
+  <%= text_area_tag :hometown, @student.hometown%><br>
+
+ <label>Student Birthday:</label><br>
+ <%= text_field_tag :birthday, @student.birthday %><br>
+
+
+  <%= submit_tag "Submit Student" %>
+<% end %> -->
+
+
+
+<!-- <%= form_for @student do |f|%>
 <p>
   <%= f.label :name %>
   <%= f.text_field :name %>
@@ -12,4 +34,4 @@
   <%= f.date_field :birthday %>
 </p>
   <%= f.submit %>
-<% end %>
+<% end %> -->

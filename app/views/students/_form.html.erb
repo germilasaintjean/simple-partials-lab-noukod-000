@@ -1,0 +1,12 @@
+<%= form_tag posts_path do %>
+  <label>Post name:</label><br>
+  <%= text_field_tag :name %><br>
+
+  <label>Post Hometown</label><br>
+  <%= text_area_tag :hometown %><br>
+
+   <label>Post Birthday</label><br>
+   <%= text_area_tag :birthday %><br>
+
+  <%= submit_tag "Submit Post" %>
+<% end %>
